@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "module": "CommonJS",
+    "typeRoots": ["node_modules/@types"],
     "target": "ESNext",
     "lib": ["ESNext", "DOM", "es6", "dom", "es2015", "es2017", "esnext.asynciterable"],
     "moduleResolution": "Node",
@@ -12,5 +13,5 @@
     "outDir": "./dist",
   },
   "include": ["**/*", "./src/schema/*.d.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "test", "**/*.test.ts"]
 }
